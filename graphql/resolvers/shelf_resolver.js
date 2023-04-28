@@ -51,7 +51,7 @@ module.exports = {
 
           return shelf
         } else {
-          throw new Error("Bu binada bu isme sahip bir raf bulunmakta.")
+          throw new Error("Bu depoda bu isme sahip bir raf bulunmakta.")
         }
 
       } catch (e) {
@@ -83,7 +83,7 @@ module.exports = {
           await createLog(req.headers, "Raf Güncelleme", shelf._id, shelf.raf_no)
           return shelf
         } else {
-          throw new Error("Bu binada bu isme sahip bir raf bulunmakta.")
+          throw new Error("Bu depoda bu isme sahip bir raf bulunmakta.")
         }
       } catch (e) {
         return new GraphQLError('Hata oluştu')
